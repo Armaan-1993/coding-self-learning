@@ -1,0 +1,19 @@
+body {
+    margin: 0 auto;
+}
+.main-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+.echo-main-container {
+    width: 364px;
+    height: 633px;
+    background-color: aqua;
+}
+.echo-img {
+    width: 364px;
+    height: 364px;
+}
+.project-enqiuiry-conatiner-div {
+    display: flex;
+}
