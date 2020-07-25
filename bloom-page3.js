@@ -15,8 +15,8 @@ arrayObject = [
         name: "Breeze",
         place: "Wayanad ,Kerala",
         description: "Self Sufficient Community Living",
-        legalProcess: 90,
-        plotAvailability: 2,
+        legalProcess: 80,
+        plotAvailability: 4,
         currentProjectStatus: "Customer Aquisition",
         projectDetails: "www.google.com",
         enquire: "www.yahoo.com",
@@ -26,8 +26,8 @@ arrayObject = [
         name: "Dew",
         place: "Wayanad ,Kerala",
         description: "Self Sufficient Community Living",
-        legalProcess: 90,
-        plotAvailability: 2,
+        legalProcess: 70,
+        plotAvailability: 1,
         currentProjectStatus: "Customer Aquisition",
         projectDetails: "www.google.com",
         enquire: "www.yahoo.com",
@@ -44,20 +44,20 @@ arrayObject.forEach((element) => {
                             <a href="" class="name-a">${element.name}</a>
                         </div>
                         <div class="place-div">
-                            <span class="place-span">Wayanad ,Kerala</span>
+                            <span class="place-span">${element.place}</span>
                         </div>
                         <div class="desc-div">
                             <span class="desc-span"
-                                >Self Sufficient Community Living</span
+                                >${element.description}</span
                             >
                         </div>
                         <div class="legal-div">
                             <span class="legal-span">Legal Processes</span>
-                            <span class="legal-count-span">90</span>
+                            <span class="legal-count-span">${element.legalProcess}</span>
                         </div>
                         <div class="plot-div">
                             <span class="plot-span">Plot Availability</span>
-                            <span class="plot-count-span">2</span>
+                            <span class="plot-count-span">${element.plotAvailability}</span>
                         </div>
                         <div class="current-div">
                             <span class="current-project-span"
