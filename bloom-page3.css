@@ -1,0 +1,23 @@
+body {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+.main-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-around;
+    grid-row-gap: 80px;
+}
+.echo-main-container {
+    width: 364px;
+    height: 633px;
+    background-color: aqua;
+}
+.echo-img {
+    width: 364px;
+    height: 364px;
+}
+.project-enqiuiry-conatiner-div {
+    display: flex;
+}
