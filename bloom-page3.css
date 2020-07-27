@@ -7,6 +7,7 @@ body {
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-content: space-around;
+    grid-row-gap: 80px;
 }
 .echo-main-container {
     width: 364px;
