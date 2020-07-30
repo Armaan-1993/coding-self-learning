@@ -40,6 +40,14 @@ body {
     letter-spacing: 0.02em;
     color: #2d6a4f;
 }
+.location-label {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #2d6a4f;
+}
 
 .main-container {
     display: flex;
