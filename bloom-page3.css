@@ -15,7 +15,7 @@ body {
 .nav-secondary-container {
     height: 29px;
     background-color: blueviolet;
-    width: 859px;
+    width: 925px;
     display: flex;
     justify-content: space-between;
 }
@@ -25,6 +25,20 @@ body {
     width: 402px;
     display: flex;
     justify-content: space-evenly;
+}
+.home-div {
+    width: 79px;
+    height: 29px;
+}
+.home-a {
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    color: #2d6a4f;
 }
 
 .main-container {
