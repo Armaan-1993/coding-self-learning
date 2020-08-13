@@ -76,10 +76,10 @@ body {
   height: 633px;
   background-color: aqua;
 }
-/* .echo-img {
+.echo-img {
   width: 364px;
   height: 364px;
-} */
+}
 .project-enqiuiry-conatiner-div {
   display: flex;
 }
