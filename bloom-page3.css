@@ -48,14 +48,14 @@ body {
   line-height: 22px;
   color: #2d6a4f;
 }
-/* .project-model-a {
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 22px;
-    color: #2d6a4f;
-} */
+.project-model-a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2d6a4f;
+}
 .status-a {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -66,10 +66,10 @@ body {
 }
 .main-container {
   display: flex;
-  /* justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-content: space-around;
-    grid-row-gap: 80px; */
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: space-around;
+  grid-row-gap: 80px;
 }
 .echo-main-container {
   width: 364px;
