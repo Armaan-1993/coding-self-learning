@@ -76,32 +76,32 @@ arrayObject = [
     projectDetails: "www.google.com",
     enquire: "www.yahoo.com",
   },
-//   {
-//     image_url: "img/breeze.image.jpeg",
-//     name: "Breeze",
-//     place: "Wayanad ,Kerala",
-//     description: "Self Sufficient Community Living",
-//     legalProcess: 80,
-//     plotAvailability: 4,
-//     currentProjectStatus: "Customer Aquisition",
-//     projectDetails: "www.google.com",
-//     enquire: "www.yahoo.com",
-//   },
-//   {
-//     image_url: "img/dew.image.jpeg",
-//     name: "Dew",
-//     place: "Wayanad ,Kerala",
-//     description: "Self Sufficient Community Living",
-//     legalProcess: 70,
-//     plotAvailability: 1,
-//     currentProjectStatus: "Customer Aquisition",
-//     projectDetails: "www.google.com",
-//     enquire: "www.yahoo.com",
-//   },
-// ];
+  {
+    image_url: "img/breeze.image.jpeg",
+    name: "Breeze",
+    place: "Wayanad ,Kerala",
+    description: "Self Sufficient Community Living",
+    legalProcess: 80,
+    plotAvailability: 4,
+    currentProjectStatus: "Customer Aquisition",
+    projectDetails: "www.google.com",
+    enquire: "www.yahoo.com",
+  },
+  {
+    image_url: "img/dew.image.jpeg",
+    name: "Dew",
+    place: "Wayanad ,Kerala",
+    description: "Self Sufficient Community Living",
+    legalProcess: 70,
+    plotAvailability: 1,
+    currentProjectStatus: "Customer Aquisition",
+    projectDetails: "www.google.com",
+    enquire: "www.yahoo.com",
+  },
+];
 
-let htmlVal = "";
-arrayObject.forEach((element) => {
+let htmlVal = "",
+arrayObject.forEach(element) => {
   htmlVal += `
     <div class="echo-main-container">
                         <div>
@@ -146,6 +146,6 @@ arrayObject.forEach((element) => {
                         </div>
                     </div>
                     `;
-});
+},
 // let html =
 document.getElementById("main-container-id").innerHTML = htmlVal;
