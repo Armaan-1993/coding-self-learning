@@ -87,17 +87,17 @@ arrayObject = [
         projectDetails: "www.google.com",
         enquire: "www.yahoo.com",
     },
-    // {
-    //     image_url: "img/dew.image.jpeg",
-    //     name: "Dew",
-    //     place: "Wayanad ,Kerala",
-    //     description: "Self Sufficient Community Living",
-    //     legalProcess: 70,
-    //     plotAvailability: 1,
-    //     currentProjectStatus: "Customer Aquisition",
-    //     projectDetails: "www.google.com",
-    //     enquire: "www.yahoo.com",
-    // },
+    {
+        image_url: "img/dew.image.jpeg",
+        name: "Dew",
+        place: "Wayanad ,Kerala",
+        description: "Self Sufficient Community Living",
+        legalProcess: 70,
+        plotAvailability: 1,
+        currentProjectStatus: "Customer Aquisition",
+        projectDetails: "www.google.com",
+        enquire: "www.yahoo.com",
+    },
 ];
 
 let htmlVal = "";
