@@ -1,0 +1,154 @@
+/* .kpisfot-logo {
+    width: 11.875vw;
+    height: 4.77vh;
+}
+
+.banner h2 {
+    margin-top: 9.11vh;
+    margin-bottom: 7.88vh;
+    color: #1175c9;
+    font-size: 3vw;
+}
+
+.banner form {
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.banner form input:first-child {
+    padding: 1.24vh;
+    border: none;
+    border-top-left-radius: 0.88vh;
+    border-bottom-left-radius: 0.88vh;
+    font-size: 1.125vw;
+    width: 22.5vw;
+}
+
+#submitbutton {
+    background-color: #1175c9;
+    border-radius: 0px 0.88vh 0.5vw 0px;
+    color: #fff;
+    font-weight: 600;
+    position: relative;
+    right: 0.3125vw;
+    font-size: 1.125vw;
+    padding: 1.24vh 1vw;
+    border: none;
+    cursor: pointer;
+    width: 13.25vw;
+    height: 5.33v;
+    margin-bottom: 9.44vh;
+}
+
+#emailid {
+    border: 2px solid #1175c9;
+    border-radius: 8px 0px 0px 8px;
+} */
+
+/* #email {
+    border: 2px solid #1175c9;
+    border-radius: 8px 0px 0px 8px;
+}
+#submitbutton {
+    background-color: #1175c9;
+    border-radius: 0px 8px 8px 0px;
+    font-family: normal normal bold 18px/24px Noto Sans;
+    color: #ffffff;
+    outline-color: transparent;
+}
+
+.e-mail::placeholder {
+    text-align: left;
+    font-family: normal normal normal 20px/36px Neue Haas Unica;
+    letter-spacing: 0.8px;
+    color: #a0a3a6;
+    font-size: 20px;
+    padding-left: 26px;
+} */
+
+/*modal */
+
+.kpisoft-model {
+    background-color: transparent;
+}
+#kpisoft-dialogbox {
+    background-color: #1175c9;
+    max-width: 515px;
+    min-height: 696px;
+}
+.model-info {
+    border-radius: 4px 4px 0px 0px;
+    opacity: 1;
+    margin-bottom: 21px;
+}
+.model-info::placeholder {
+    font-family: normal normal medium 15px/36px Neue Haas Unica;
+    letter-spacing: 0.3px;
+    color: #40464e;
+    font-weight: 700;
+    font-size: 15px;
+}
+#company-size {
+    background-color: white;
+    color: #40464e;
+    font-family: normal normal medium 15px/36px Neue Haas Unica;
+    letter-spacing: 0.3px;
+    color: #40464e;
+    opacity: 1;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 4px 4px 0px 0px;
+}
+#checkbox-label {
+    font-family: normal normal normal 13px/36px Neue Haas Unica;
+    color: #ffffff;
+    font-size: 13px;
+    padding-left: 5px;
+}
+.checkbox-label-a-tag {
+    text-decoration-line: underline;
+    color: #ffffff;
+}
+.checkbox-main-div {
+    /* background-color: red; */
+    margin-left: 47px;
+    margin-bottom: 48px;
+}
+#modal-checkbox {
+    width: 16px;
+    height: 16px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #b7babc;
+}
+
+#contact-button {
+    display: block;
+    background-color: #feda31;
+    border-radius: 4px;
+    font-family: normal normal bold 15px/20px Noto Sans;
+    color: #1175c9;
+    font-size: 15px;
+    font-weight: 600;
+    width: 100%;
+}
+.contact-button-div {
+    width: 90%;
+    margin-bottom: 16px;
+}
+
+.modal-thanks-span {
+    font-family: normal normal medium 13px/36px Neue Haas Unica;
+    color: #f4b229;
+    font-size: 13px;
+}
+.thankyou-div {
+    margin-left: 43px;
+}
+
+/* .btn.fa .caret {
+    left: 5px;
+    position: absolute;
+    top: calc(50% - 1px);
+} */
