@@ -1,0 +1,172 @@
+/* Modal */
+.modal-content {
+    background: #1175c9;
+}
+.modal-content input[type="text"],
+.modal-content input[type="email"],
+.modal-content textarea,
+.modal-content select {
+    width: 80%;
+    margin: auto;
+}
+.group-check {
+    justify-content: center;
+    color: #fff;
+}
+.group-check a {
+    color: #fff;
+    font-weight: 900;
+}
+.group-check input {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 2px;
+}
+.modal-submit {
+    display: block;
+    width: 80%;
+    background: #feda31;
+    text-transform: uppercase;
+    color: #1175c9;
+    font-weight: 600;
+}
+.modal-submit:hover {
+    text-decoration: none;
+    color: #1175c9;
+}
+.modal-footer small {
+    text-align: center;
+    display: block;
+    width: 80%;
+    color: #feda31;
+}
+.modal-footer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+.modal-content input::placeholder,
+.modal-content textarea::placeholder {
+    font-family: normal normal medium 15px/36px Neue Haas Unica;
+    letter-spacing: 0.3px;
+    color: #40464e;
+    font-weight: 700;
+    font-size: 15px;
+}
+.modal-content select {
+    font-family: normal normal medium 15px/36px;
+    letter-spacing: 0.3px;
+    color: #40464e;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.dropdown-a-tag {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    background-color: white;
+}
+.dropdown-a-tag:hover {
+    background-color: white;
+}
+.modal-option {
+    width: 80%;
+}
+.dropdown-heading-font {
+    font-family: normal normal medium 15px/36px Neue Haas Unica;
+    letter-spacing: 0.3px;
+    color: #40464e;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+@media screen and (min-width: 3839px) {
+    .modal-content select {
+        width: 80%;
+        margin: auto;
+    }
+    .modal-content {
+        width: 32.2vw;
+        height: 77.3vh;
+    }
+    .group-check {
+        justify-content: center;
+        color: #fff;
+        font-size: 0.81vw;
+    }
+    .group-check a {
+        color: #fff;
+        font-weight: 900;
+        font-size: 0.81vw;
+    }
+    .group-check input {
+        width: 1vw;
+        height: 1.8vh;
+        position: relative;
+        top: 6px;
+    }
+    .modal-submit {
+        display: block;
+        width: 80%;
+        height: 4.4vh;
+        background: #feda31;
+        text-transform: uppercase;
+        font-size: 0.9vw;
+        color: #1175c9;
+        font-weight: 600;
+    }
+    .modal-footer small {
+        text-align: center;
+        display: block;
+        width: 80%;
+        font-size: 0.81vw;
+        color: #feda31;
+    }
+    .modal-footer {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+    .modal-content input::placeholder,
+    .modal-content textarea::placeholder {
+        font-family: normal normal medium 15px/36px Neue Haas Unica;
+        letter-spacing: 0.3px;
+        color: #40464e;
+        font-weight: 700;
+        font-size: 0.9vw;
+    }
+    .modal-content select {
+        font-family: normal normal medium 15px/36px;
+        letter-spacing: 0.3px;
+        color: #40464e;
+        font-weight: 700;
+        font-size: 0.9vw;
+    }
+    .modal-body .form-group input {
+        font-size: 0.9vw;
+    }
+    .dropdown-a-tag {
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        background-color: white;
+        padding: 30px 0 30px 0;
+    }
+    .modal-option {
+        width: 80%;
+    }
+    .dropdown-heading-font {
+        font-family: normal normal medium 15px/36px Neue Haas Unica;
+        letter-spacing: 0.3px;
+        color: #40464e;
+        font-weight: 700;
+        font-size: 0.9vw;
+    }
+    .form-group {
+        margin-bottom: 3rem;
+    }
+}
