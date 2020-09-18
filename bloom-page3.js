@@ -149,3 +149,7 @@ arrayObject.forEach((element) => {
 }),
     // let html =
     (document.getElementById("main-container-id").innerHTML = htmlVal);
+for (let i = 0; i < ArrayBuffer; i++) {
+    array.push();
+}
+let myNAme = "Armaan";
