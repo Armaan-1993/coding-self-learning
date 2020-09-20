@@ -141,10 +141,65 @@
 //     console.log(value);
 // });
 
-let bestPromise = new Promise(function (resolve, reject) {
-    setTimeout(resolve("It has been true"), 1000);
-});
+// let bestPromise = new Promise(function (resolve, reject) {
+//     if (true) {
+//         setTimeout(resolve("It has been true"), 1000);
+//     } else {
+//         setTimeout(reject("I have failed"), 2000);
+//     }
+// });
 
-bestPromise.then(function (value) {
-    console.log(value);
-});
+// bestPromise
+//     .then(function (value) {
+//         return value;
+//     })
+//     .then(function (value) {
+//         console.log(value);
+//     })
+//     .catch(function (myvalue) {
+//         console.log(myvalue);
+//     });
+
+// let myObj = {
+//     name: "Armaan",
+//     age: 14,
+//     isMale: true,
+//     myFunc: function printName(myName) {
+//         return `My name is ${myName} and i am ${this.age} years old`;
+//     },
+// };
+// let myObj = [1, 2, 3, 45, 5];
+// console.log(myObj.myFunc("Armaan"));
+
+// const myfucn = (name, age) => {
+//     console.log(`My name is ${name} and i am ${age} years old`);
+// };
+
+// for (const prop of myObj) {
+//     console.log(prop);
+// // }
+// let myObj = [1, 2, 3, 45, 5];
+// let myarray = myObj.join("");
+// console.log(myarray);
+
+// // myfucn("Armaan", 26);
+
+// function Person (name, age, sex) {
+//     this.
+// }
+
+// let myarray = ["peggy", "milo", "july", "pegasus"];
+// myarray.map((value) => {
+//     return value + "o";
+// });
+// console.log(myarray);
+
+// let myarray = ["peggy", "milo", "july", "pegasus"];
+// const newArray = myarray
+//     .filter((value) => {
+//         return value.length > 4;
+//     })
+//     .map((dog) => {
+//         return dog + "d";
+//     });
+// console.log(newArray);
