@@ -25,8 +25,19 @@
 // function printNum() {
 //     alert(Math.floor(Math.random() * 10));
 // }
-setInterval(printNum, 1000);
+// setInterval(printNum, 1000);
 
-function printNum() {
-    alert(Math.floor(Math.random() * 100));
+// function printNum() {
+//     alert(Math.floor(Math.random() * 100));
+// }
+
+// setTimeout(setTimeout(printNum, 500), 1000);
+
+// function printNum() {
+//     alert("We are the world!");
+// }
+
+function myFunction(name, age, sex) {
+    console.log(`My name is ${name} and i am ${age} years old`);
 }
+myFunction("Armaan", 26);
