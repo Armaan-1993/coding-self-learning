@@ -106,5 +106,28 @@
 // }
 // console.log(hello); // hello is not defined
 
-var name;
-console.log(name);
+// let type = null;
+// console.log(typeof type);
+// let type;
+// console.log(typeof type);
+
+// let num = BigInt(989398239209309302);
+// let num = 897798768778778768n;
+// num = 898n;
+// console.log("2" - 3);
+// console.log(num);
+
+// function newfunction(num, callback) {
+//     setTimeout(function print() {
+//         for (let i = 0; i < num; i++) {
+//             console.log(i);
+//         }
+//         callback();
+//     }, 2000);
+// }
+
+// newfunction(5, getname);
+
+// function getname() {
+//     console.log("MY name is Armaan");
+// }
