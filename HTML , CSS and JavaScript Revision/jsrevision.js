@@ -54,27 +54,57 @@
 // }
 // setInterval(runRandomNos(9), 1000);
 
-let myarray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
-function addArray() {
-    let sum = 0;
-    for (let i = 0; i < myarray.length; i++) {
-        sum += myarray[i];
-    }
-    console.log(sum);
-}
-addArray();
+// let myarray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+// function addArray() {
+//     let sum = 0;
+//     for (let i = 0; i < myarray.length; i++) {
+//         sum += myarray[i];
+//     }
+//     console.log(sum);
+// }
+// addArray();
 
-let mynewArray = new Array(10);
-console.log(`The length of mynewArray is ${mynewArray.length}`);
-mynewArray.push(5);
-mynewArray.push(67);
-mynewArray[4] = 98;
-for (let i = 0; i < mynewArray.length; i++) {
-    if (mynewArray[i] === 67 || mynewArray[i] === 5) {
-        // console.log(`The index is ${mynewArray.indexOf(mynewArray[i])}`);
-        console.log(
-            `The index of 5 is at ${mynewArray.indexOf(mynewArray[i])}`
-        );
-    }
-    console.log(mynewArray[i]);
-}
+// let mynewArray = new Array(10);
+// console.log(`The length of mynewArray is ${mynewArray.length}`);
+// mynewArray.push(5);
+// mynewArray.push(67);
+// mynewArray[4] = 98;
+// for (let i = 0; i < mynewArray.length; i++) {
+//     if (mynewArray[i] === 67 || mynewArray[i] === 5) {
+//         // console.log(`The index is ${mynewArray.indexOf(mynewArray[i])}`);
+//         console.log(
+//             `The index of 5 is at ${mynewArray.indexOf(mynewArray[i])}`
+//         );
+//     }
+//     console.log(mynewArray[i]);
+// }
+
+// var greeter = "hey hi";
+// var times = 4;
+
+// if (times > 3) {
+//     var greeter = "say Hello instead";
+// }
+
+// console.log(greeter); // "say Hello instead"
+
+// let greeter = "hey hi";
+// let times = 4;
+
+// if (times > 3) {
+//     let greeter = "say Hello instead";
+// }
+
+// console.log(greeter); // "say Hello instead"
+
+// let greeting = "say Hi";
+// let times = 4;
+
+// if (times > 3) {
+//     hello = "say Hello instead";
+//     console.log(hello); // "say Hello instead"
+// }
+// console.log(hello); // hello is not defined
+
+var name;
+console.log(name);
