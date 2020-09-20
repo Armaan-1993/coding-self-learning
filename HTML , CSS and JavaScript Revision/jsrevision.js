@@ -131,3 +131,20 @@
 // function getname() {
 //     console.log("MY name is Armaan");
 // }
+
+// const myPromise = new Promise((resolve, reject) => {
+//     setTimeout(function () {
+//         resolve("I have succeeded");
+//     }, 1000);
+// });
+// myPromise.then(function (value) {
+//     console.log(value);
+// });
+
+let bestPromise = new Promise(function (resolve, reject) {
+    setTimeout(resolve("It has been true"), 1000);
+});
+
+bestPromise.then(function (value) {
+    console.log(value);
+});
