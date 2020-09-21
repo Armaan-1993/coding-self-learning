@@ -257,15 +257,25 @@
 // obj.printfunc("October");
 // obj.newval();
 
-class dog {
-    Constructor(name, age) {
-        this.name = name;
-        this.age = age;
-    }
-    sayMyName() {
-        console.log("The next day is going to be awesome");
+// class dog {
+//     Constructor(name, age) {
+//         this.name = name;
+//         this.age = age;
+//     }
+//     sayMyName() {
+//         console.log("The next day is going to be awesome");
+//     }
+// }
+// let betty = new dog("Armaan", 16);
+// betty.sayMyName();
+// console.log(betty);
+
+class mobiles {
+    constructor(brand) {
+        this.name = brand.name;
+        this.price = brand.price;
+        this.processor = brand.processor;
     }
 }
-let betty = new dog("Armaan", 16);
-betty.sayMyName();
-console.log(betty.name);
+const iphone = new mobiles("Apple", 45000, "A12 BIONIC");
+console.log(iphone);
