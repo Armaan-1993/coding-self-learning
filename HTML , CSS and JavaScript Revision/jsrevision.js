@@ -204,12 +204,12 @@
 //     });
 // console.log(newArray);
 
-function Dog(details) {
-    this.breed = details.breed;
-    this.height = details.height;
-    this.weight = details.weight;
-    this.color = details.color;
-}
+// function Dog(details) {
+//     this.breed = details.breed;
+//     this.height = details.height;
+//     this.weight = details.weight;
+//     this.color = details.color;
+// }
 
 // let peggy = {
 //     breed: "Basset Hound",
@@ -225,7 +225,34 @@ function Dog(details) {
 //     console.log("It's true!");
 // }
 
-Dog.prototype.certified;
+// Dog.prototype.certified;
 
-let mydog = new Dog("Basset Hound", "0.5m", 24, "bi-color", true);
-console.log(mydog);
+// let mydog = new Dog("Basset Hound", "0.5m", 24, "bi-color", true);
+// console.log(mydog);
+
+// let myfunc = function (num1) {
+//     let myfunction = function (num2) {
+//         return num1 + num2;
+//     };
+//     return myfunction;
+// };
+// let firstSum = myfunc(2);
+// let secondSum = firstSum(3);
+// console.log(secondSum)
+
+let obj = {
+    name: "Armaan",
+    age: 26,
+    printfunc: function (born) {
+        console.log(
+            `My name is ${this.name} and i am ${this.age} years old and i was born on ${born}`
+        );
+    },
+    newval: function () {
+        for (const props in obj) {
+            console.log(`The properties are ${props} : ${obj[props]}`);
+        }
+    },
+};
+obj.printfunc("October");
+obj.newval();
