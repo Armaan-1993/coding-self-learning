@@ -203,3 +203,12 @@
 //         return dog + "d";
 //     });
 // console.log(newArray);
+
+function Dog(breed, height, weight, color) {
+    this.breed = breed;
+    this.height = height;
+    this.weight = weight;
+    this.color = color;
+}
+const peggy = new Dog("Basset Hound", "0.5m", "25kg", "bi-color");
+console.log(peggy);
