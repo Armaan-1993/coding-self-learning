@@ -240,19 +240,32 @@
 // let secondSum = firstSum(3);
 // console.log(secondSum)
 
-let obj = {
-    name: "Armaan",
-    age: 26,
-    printfunc: function (born) {
-        console.log(
-            `My name is ${this.name} and i am ${this.age} years old and i was born on ${born}`
-        );
-    },
-    newval: function () {
-        for (const props in obj) {
-            console.log(`The properties are ${props} : ${obj[props]}`);
-        }
-    },
-};
-obj.printfunc("October");
-obj.newval();
+// let obj = {
+//     name: "Armaan",
+//     age: 26,
+//     printfunc: function (born) {
+//         console.log(
+//             `My name is ${this.name} and i am ${this.age} years old and i was born on ${born}`
+//         );
+//     },
+//     newval: function () {
+//         for (const props in obj) {
+//             console.log(`The properties are ${props} : ${obj[props]}`);
+//         }
+//     },
+// };
+// obj.printfunc("October");
+// obj.newval();
+
+class dog {
+    Constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    sayMyName() {
+        console.log("The next day is going to be awesome");
+    }
+}
+let betty = new dog("Armaan", 16);
+betty.sayMyName();
+console.log(betty.name);
