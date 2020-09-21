@@ -204,11 +204,28 @@
 //     });
 // console.log(newArray);
 
-function Dog(breed, height, weight, color) {
-    this.breed = breed;
-    this.height = height;
-    this.weight = weight;
-    this.color = color;
+function Dog(details) {
+    this.breed = details.breed;
+    this.height = details.height;
+    this.weight = details.weight;
+    this.color = details.color;
 }
-const peggy = new Dog("Basset Hound", "0.5m", "25kg", "bi-color");
-console.log(peggy);
+
+// let peggy = {
+//     breed: "Basset Hound",
+//     height: "0.5m",
+//     weight: "25kg",
+//     color: "bi-color",
+// };
+
+// const mybaby = new Dog(peggy);
+// console.log(mybaby);
+
+// if (mybaby instanceof Dog) {
+//     console.log("It's true!");
+// }
+
+Dog.prototype.certified;
+
+let mydog = new Dog("Basset Hound", "0.5m", 24, "bi-color", true);
+console.log(mydog);
