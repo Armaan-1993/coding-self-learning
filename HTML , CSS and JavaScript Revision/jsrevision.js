@@ -270,12 +270,60 @@
 // betty.sayMyName();
 // console.log(betty);
 
-class mobiles {
-    constructor(brand) {
-        this.name = brand.name;
-        this.price = brand.price;
-        this.processor = brand.processor;
+// class Mobiles {
+//     constructor(brand) {
+//         this.name = brand.name;
+//         this.price = brand.price;
+//         this.processor = brand.processor;
+//     }
+//     sayHelloWorld() {
+//         console.log("Hello world");
+//     }
+// }
+// const iphone = new Mobiles({
+//     name: "Apple",
+//     price: 45000,
+//     processor: "A!2 BIONIC",
+// });
+// console.log(iphone);
+// iphone.sayHelloWorld();
+
+// class Playstation extends Mobiles {
+//     constructor(brand, durability) {
+//         super(brand);
+//         this.durability = durability;
+//     }
+//     sing() {
+//         console.log("Numb");
+//     }
+// }
+// const song = new Playstation(
+//     {
+//         name: "Call of duty",
+//         price: 1200,
+//         processor: "AMD",
+//     },
+//     45
+// );
+// console.log(song);
+// song.sing();
+// song.sayHelloWorld();
+
+const myPromise = new Promise((resolve, reject) => {
+    if (resolve) {
+        setTimeout(function () {
+            return "It's a resolve";
+        }, 1000);
+    } else if (reject) {
+        setTimeout(function () {
+            return "It's a reject";
+        }, 1000);
     }
-}
-const iphone = new mobiles("Apple", 45000, "A12 BIONIC");
-console.log(iphone);
+});
+myPromise
+    .then(function (value) {
+        console.log(value);
+    })
+    .catch(function (myvalue) {
+        console.log(myvalue);
+    });
