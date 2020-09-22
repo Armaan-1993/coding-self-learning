@@ -309,21 +309,47 @@
 // song.sing();
 // song.sayHelloWorld();
 
-const myPromise = new Promise((resolve, reject) => {
-    if (false) {
-        setTimeout(function () {
-            resolve("It's a resolve");
-        }, 1000);
-    } else {
-        setTimeout(function () {
-            reject("It's a reject");
-        }, 1000);
+// const myPromise = new Promise((resolve, reject) => {
+//     if (false) {
+//         setTimeout(function () {
+//             resolve("It's a resolve");
+//         }, 1000);
+//     } else {
+//         setTimeout(function () {
+//             reject("It's a reject");
+//         }, 1000);
+//     }
+// });
+// myPromise
+//     .then(function (value) {
+//         console.log(value);
+//     })
+//     .catch(function (myvalue) {
+//         console.log(myvalue);
+//     });
+
+class Xbox {
+    constructor(details) {
+        this.game = details.game;
+        this.price = details.price;
     }
-});
-myPromise
-    .then(function (value) {
-        console.log(value);
-    })
-    .catch(function (myvalue) {
-        console.log(myvalue);
-    });
+    openxbox() {
+        return "I love xbox";
+    }
+}
+const callOfDuty = new Xbox({ game: "Call of Duty", price: 1700 });
+console.log(callOfDuty);
+callOfDuty.openxbox();
+
+class Ps5 extends Xbox {
+    constructor(details, year) {
+        super(details);
+        this.year = year;
+    }
+    openps5() {
+        console.log("INlove playstation 5");
+    }
+}
+const farCry = new Ps5({ game: "Far Cry 4", price: 2100 }, 2017);
+console.log(farCry);
+farCry.openps5();
