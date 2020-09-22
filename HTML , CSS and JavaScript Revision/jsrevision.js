@@ -395,9 +395,26 @@
 //         });
 // }
 
-let myarray = [1, 2, 3, 4, 5, 4, 5, 6];
-let sum = 0;
-myarray.map((value) => {
-    sum = sum + value;
-});
-console.log(sum);
+// let myarray = [1, 2, 3, 4, 5, 4, 5, 6];
+// let sum = 0;
+// myarray.map((value) => {
+//     sum = sum + value;
+// });
+// console.log(sum);
+
+function resolveAfter2Seconds() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve("resolved");
+        }, 2000);
+    });
+}
+
+async function asyncCall() {
+    console.log("calling");
+    const result = await resolveAfter2Seconds();
+    console.log(result);
+    // expected output: "resolved"
+}
+
+asyncCall();
