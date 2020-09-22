@@ -310,13 +310,13 @@
 // song.sayHelloWorld();
 
 const myPromise = new Promise((resolve, reject) => {
-    if (resolve) {
+    if (false) {
         setTimeout(function () {
-            return "It's a resolve";
+            resolve("It's a resolve");
         }, 1000);
-    } else if (reject) {
+    } else {
         setTimeout(function () {
-            return "It's a reject";
+            reject("It's a reject");
         }, 1000);
     }
 });
