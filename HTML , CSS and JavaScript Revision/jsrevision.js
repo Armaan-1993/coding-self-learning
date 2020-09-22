@@ -328,28 +328,76 @@
 //         console.log(myvalue);
 //     });
 
-class Xbox {
-    constructor(details) {
-        this.game = details.game;
-        this.price = details.price;
-    }
-    openxbox() {
-        return "I love xbox";
-    }
-}
-const callOfDuty = new Xbox({ game: "Call of Duty", price: 1700 });
-console.log(callOfDuty);
-callOfDuty.openxbox();
+// class Xbox {
+//     constructor(details) {
+//         this.game = details.game;
+//         this.price = details.price;
+//     }
+//     openxbox() {
+//         return "I love xbox";
+//     }
+// }
+// const callOfDuty = new Xbox({ game: "Call of Duty", price: 1700 });
+// console.log(callOfDuty);
+// callOfDuty.openxbox();
 
-class Ps5 extends Xbox {
-    constructor(details, year) {
-        super(details);
-        this.year = year;
-    }
-    openps5() {
-        console.log("INlove playstation 5");
-    }
-}
-const farCry = new Ps5({ game: "Far Cry 4", price: 2100 }, 2017);
-console.log(farCry);
-farCry.openps5();
+// class Ps5 extends Xbox {
+//     constructor(details, year) {
+//         super(details);
+//         this.year = year;
+//     }
+//     openps5() {
+//         console.log("I love playstation 5");
+//     }
+// }
+// const farCry = new Ps5({ game: "Far Cry 4", price: 2100 }, 2017);
+// console.log(farCry);
+// farCry.openps5();
+
+// const life = function name(time) {
+//     console.log("My " + time);
+// };
+// life("cloud 9");
+
+// function Life(brand) {
+//     this.console = brand.console;
+//     this.price = brand.price;
+//     this.func = function () {
+//         console.log(this.console);
+//     };
+// }
+// const mylife = new Life({ console: "Awesome", price: 1200 });
+// console.log(mylife);
+
+// const finalpromise = new Promise((resolve, reject) => {
+//     if (false) {
+//         resolve("Yooo waduuup");
+//     } else {
+//         reject("yoooo rejected");
+//     }
+// });
+// finalpromise
+//     .then(function (value) {
+//         console.log(value);
+//     })
+//     .catch((myvalue) => {
+//         console.log(myvalue);
+//     });
+
+// function myfunction() {
+//     fetch(`www.google.com`)
+//         .then((value) => value.json)
+//         .then((data) => {
+//             let output = "";
+//             data.forEach((mydata) => {
+//                 output += `<li>${mydata.login}</li>`;
+//             });
+//         });
+// }
+
+let myarray = [1, 2, 3, 4, 5, 4, 5, 6];
+let sum = 0;
+myarray.map((value) => {
+    sum = sum + value;
+});
+console.log(sum);
