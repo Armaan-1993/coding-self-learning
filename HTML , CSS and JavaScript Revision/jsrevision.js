@@ -433,3 +433,52 @@
 //     console.log(amg);
 // };
 // newFunction();
+
+// let arr = [1, 2, 3];
+// const newarray = arr.map((num) => num * num);
+// console.log(newarray);
+
+// let array = [1, 2, 3, 4, 5, 6];
+// const newarray = array.filter((num) => num % 2 === 0);
+// console.log(newarray);
+
+// console.log(sym1);
+// if (sym1 === sym2) {
+//     console.log("its true");
+// } else {
+//     console.log("noo");
+// }
+
+// function checksymb() {
+//     let sym1 = Symbol("symbol1");
+//     let sym2 = Symbol("symnol1");
+//     if (sym1 !== sym2) {
+//         return "its not equal";
+//     }
+// }
+// console.log(checksymb());
+
+fetch(`wwww.google.vom`).then(function (response) {
+    if (response.status !== 200) {
+        console.log("THwrw is  a problem with " + response.status);
+    }
+    return;
+});
+response.json().then((data) => {
+    let output;
+    output += `<li>${data}<li>`;
+});
+
+fetch(`asfasdsdsdf`).then((response) => {
+    if (response.status !== 200) console.log("THere is a problem");
+});
+response
+    .json()
+    .then((data) => {
+        console.log(data);
+    })
+    .catch(function (problem) {
+        if (problem.status === 200) {
+            throw "Error";
+        }
+    });
