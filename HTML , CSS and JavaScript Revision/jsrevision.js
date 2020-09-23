@@ -402,19 +402,34 @@
 // });
 // console.log(sum);
 
-function resolveAfter2Seconds() {
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            resolve("resolved");
-        }, 2000);
-    });
-}
+// function resolveAfter2Seconds() {
+//     return new Promise((resolve) => {
+//         setTimeout(() => {
+//             resolve("resolved");
+//         }, 2000);
+//     });
+// }
 
-async function asyncCall() {
-    console.log("calling");
-    const result = await resolveAfter2Seconds();
-    console.log(result);
-    // expected output: "resolved"
-}
+// async function asyncCall() {
+//     console.log("calling");
+//     const result = await resolveAfter2Seconds();
+//     // return result;
 
-asyncCall();
+//     console.log(result);
+//     // expected output: "resolved"
+// }
+
+// asyncCall();
+
+// function runAFunction() {
+//     return new Promise((resolve) => {
+//         setInterval(function () {
+//             resolve("I am batman!");
+//         }, 2000);
+//     });
+// }
+// const newFunction = async function () {
+//     const amg = await runAFunction();
+//     console.log(amg);
+// };
+// newFunction();
