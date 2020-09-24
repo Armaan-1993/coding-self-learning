@@ -548,3 +548,9 @@
 // let myobj = { a: 1, b: 2 };
 // let newobj = { c: 3, d: 4 };
 // console.log(Object.assign(myobj, newobj));
+
+let obj = { a: 1, b: 2 };
+// console.log(Object.entries(a));
+Object.freeze(obj);
+obj.a = 32;
+console.log(obj);
