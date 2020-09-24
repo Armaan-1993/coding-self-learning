@@ -486,14 +486,31 @@
 // console.log(Array.from("iuhhb"));
 // console.log(Array.from([1, 2, 3], (num) => num + num));
 
-let myarray = [1, 2, 3, 5];
+// let myarray = [1, 2, 3, 5];
 // let mynewArray = Array.from(myarray, (num) => num + num);
 // console.log(mynewArray);
 
 // if (Array.isArray(myarray)) {
 //     console.log("yesss");
 // }
-let hisarray = [12, 34, 45, 63];
+// let hisarray = [12, 34, 45, 63];
 
-hisarray.copyWithin(0, 2, 3);
-console.log(hisarray);
+// hisarray.copyWithin(0, 2, 3);
+// console.log(hisarray);
+
+// let myarray = [1, 2, 3, 5];
+
+// let myiterator = myarray.entries();
+// console.log(myiterator.next().value);
+// console.log(myiterator.next().value);
+// console.log(myiterator.next().value);
+// console.log(myiterator.next().value);
+// console.log(myiterator.next().value);
+
+// let arr1 = [1, 2, 4];
+// let arr2 = [5, 7, 9];
+// console.log([...arr1, ...arr2]);
+
+let myarray = [1, 76, 5, 7, 9];
+let newarray = myarray.filter((num) => num % 2 !== 0);
+console.log(newarray);
