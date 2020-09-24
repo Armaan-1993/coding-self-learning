@@ -511,6 +511,40 @@
 // let arr2 = [5, 7, 9];
 // console.log([...arr1, ...arr2]);
 
-let myarray = [1, 76, 5, 7, 9];
-let newarray = myarray.filter((num) => num % 2 !== 0);
-console.log(newarray);
+// let myarray = [1, 76, 5, 7, 9];
+// let newarray = myarray.filter((num) => num % 2 !== 0);
+// console.log(newarray);
+
+// console.log(Array.from("iuhhb"));
+// console.log(Array.from([1, 2, 3], (num) => num + num));
+
+// console.log(Array.of(6));
+
+// let arr1 = [1, 2, 4];
+// console.log(arr1.findIndex((num) => num > 2));
+
+// let arr = [1, 2, 4, 6];
+// let mydata = arr.join("");
+// console.log(typeof mydata);
+
+// let target = { a: 1, b: 2 };
+// let source = { c: 3, d: 4 };
+// const targetFromSource = Object.assign(target, source);
+// // console.log(targetFromSource);
+// console.log(targetFromSource);
+
+// let myObj = {
+//     name: "Armaan",
+//     age: 26,
+//     myfunction: function () {
+//         console.log(`My name is ${this.name} and i am ${this.age} years old`);
+//     },
+// };
+// const newObj = Object.create(myObj);
+// newObj.newname = "Rehaan";
+// newObj.human = true;
+// console.log(newObj);
+
+// let myobj = { a: 1, b: 2 };
+// let newobj = { c: 3, d: 4 };
+// console.log(Object.assign(myobj, newobj));
