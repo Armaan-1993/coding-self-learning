@@ -458,27 +458,42 @@
 // }
 // console.log(checksymb());
 
-fetch(`wwww.google.vom`).then(function (response) {
-    if (response.status !== 200) {
-        console.log("THwrw is  a problem with " + response.status);
-    }
-    return;
-});
-response.json().then((data) => {
-    let output;
-    output += `<li>${data}<li>`;
-});
+// fetch(`wwww.google.vom`).then(function (response) {
+//     if (response.status !== 200) {
+//         console.log("THwrw is  a problem with " + response.status);
+//     }
+//     return;
+// });
+// response.json().then((data) => {
+//     let output;
+//     output += `<li>${data}<li>`;
+// });
 
-fetch(`asfasdsdsdf`).then((response) => {
-    if (response.status !== 200) console.log("THere is a problem");
-});
-response
-    .json()
-    .then((data) => {
-        console.log(data);
-    })
-    .catch(function (problem) {
-        if (problem.status === 200) {
-            throw "Error";
-        }
-    });
+// fetch(`asfasdsdsdf`).then((response) => {
+//     if (response.status !== 200) console.log("THere is a problem");
+// });
+// response
+//     .json()
+//     .then((data) => {
+//         console.log(data);
+//     })
+//     .catch(function (problem) {
+//         if (problem.status === 200) {
+//             throw "Error";
+//         }
+//     });
+
+// console.log(Array.from("iuhhb"));
+// console.log(Array.from([1, 2, 3], (num) => num + num));
+
+let myarray = [1, 2, 3, 5];
+// let mynewArray = Array.from(myarray, (num) => num + num);
+// console.log(mynewArray);
+
+// if (Array.isArray(myarray)) {
+//     console.log("yesss");
+// }
+let hisarray = [12, 34, 45, 63];
+
+hisarray.copyWithin(0, 2, 3);
+console.log(hisarray);
