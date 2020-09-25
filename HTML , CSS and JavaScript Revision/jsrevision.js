@@ -569,12 +569,18 @@
 //     console.log("It is not extensible");
 // }
 
-let obj = {
-    name: "Armaan",
-    age: 26,
-    func: function () {
-        console.log(`My name is ${this.name} and i am ${this.age} years old`);
-    },
-};
+// let obj = {
+//     name: "Armaan",
+//     age: 26,
+//     func: function () {
+//         console.log(`My name is ${this.name} and i am ${this.age} years old`);
+//     },
+// };
 
 // console.log(Object.values(obj));
+
+try {
+    throw "suuuup";
+} catch (value) {
+    throw "Yooooo";
+}
