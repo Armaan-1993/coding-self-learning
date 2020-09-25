@@ -555,8 +555,16 @@
 // obj.a = 32;
 // console.log(obj);
 
-let obj = { a: 1, b: 2 };
-Object.freeze(obj);
-if (Object.isFrozen(obj)) {
-    console.log("true");
-}
+// let obj = { a: 1, b: 2 };
+// Object.freeze(obj);
+// if (Object.isFrozen(obj)) {
+//     console.log("true");
+// }
+
+// let obj = {};
+// Object.freeze(obj);
+// if (Object.isExtensible(obj)) {
+//     console.log("It is extensible");
+// } else {
+//     console.log("It is not extensible");
+// }
