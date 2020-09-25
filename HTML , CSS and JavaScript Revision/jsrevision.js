@@ -579,8 +579,12 @@
 
 // console.log(Object.values(obj));
 
-try {
-    throw "suuuup";
-} catch (value) {
-    throw "Yooooo";
-}
+// try {
+//     throw "suuuup";
+// } catch (value) {
+//     throw "Yooooo";
+// }
+
+const newFunc = async function () {
+    await new Promise((resolve) => console.log("This is a promise!"));
+};
