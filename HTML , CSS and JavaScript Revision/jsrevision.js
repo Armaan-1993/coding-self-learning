@@ -607,10 +607,13 @@
 // nextPromise
 //     .then((value) => console.log("This is a resolve"))
 //     .catch((myvalue) => console.log("This is a reject"));
-
-const newPromisefunction = function () {
+function newPromisefunction() {
     return new Promise((resolve, reject) => {
-        resolve("This is resolved!");
+        setTimeout(function () {
+            resolve("This is resolved");
+        }, 2000);
     });
-};
-newPromisefunction();
+}
+newPromisefunction
+    .then((value) => console.log(value))
+    .catch((myvalue) => console.log(myvalue));
