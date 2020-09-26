@@ -589,10 +589,21 @@
 //     await new Promise((resolve) => console.log("This is a promise!"));
 // };
 
-const newFunction = function () {
-    return new Promise((resolve) => {
-        console.log("Time's up!");
-    });
-}
-    .then((value) => console.log("This is awesome!"))
-    .catch((myvalue) => console.log("This is not awesome!"));
+// const newFunction = function () {
+//     return new Promise((resolve) => {
+//         console.log("Time's up!");
+//     });
+// }
+//     .then((value) => console.log("This is awesome!"))
+//     .catch((myvalue) => console.log("This is not awesome!"));
+
+const nextPromise = new Promise((resolve, reject) => {
+    if (true) {
+        resolve("This is true!");
+    } else {
+        reject("This is false");
+    }
+});
+nextPromise
+    .then((value) => console.log("This is a resolve"))
+    .catch((myvalue) => console.log("This is a reject"));
