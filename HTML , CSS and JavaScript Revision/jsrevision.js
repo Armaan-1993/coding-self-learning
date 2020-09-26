@@ -585,6 +585,14 @@
 //     throw "Yooooo";
 // }
 
-const newFunc = async function () {
-    await new Promise((resolve) => console.log("This is a promise!"));
-};
+// const newFunc = async function () {
+//     await new Promise((resolve) => console.log("This is a promise!"));
+// };
+
+const newFunction = function () {
+    return new Promise((resolve) => {
+        console.log("Time's up!");
+    });
+}
+    .then((value) => console.log("This is awesome!"))
+    .catch((myvalue) => console.log("This is not awesome!"));
