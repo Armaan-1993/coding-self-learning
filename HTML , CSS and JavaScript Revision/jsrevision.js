@@ -608,18 +608,18 @@
 //     .then((value) => console.log("This is a resolve"))
 //     .catch((myvalue) => console.log("This is a reject"));
 
-const mynewpromise = new Promise((resolve, reject) => {
-    setTimeout(function () {
-        if (true) {
-            resolve("This is a resolved case!");
-        } else {
-            reject("This is a rejected case!");
-        }
-    });
-});
-mynewpromise
-    .then((myresolvevalue) => console.log(myresolvevalue))
-    .catch((myrejectvalue) => console.log(myrejectvalue));
+// const mynewpromise = new Promise((resolve, reject) => {
+//     setTimeout(function () {
+//         if (true) {
+//             resolve("This is a resolved case!");
+//         } else {
+//             reject("This is a rejected case!");
+//         }
+//     });
+// });
+// mynewpromise
+//     .then((myresolvevalue) => console.log(myresolvevalue))
+//     .catch((myrejectvalue) => console.log(myrejectvalue));
 
 // function myRejectFunction() {
 //     console.log("This is a resolved case!");
@@ -627,3 +627,18 @@ mynewpromise
 // function myRejectFunction() {
 //     console.log("This is a rejected case");
 // }
+
+fetch(
+    `https://www.udemy.com/course/complete-react-developer-zero-to-mastery/learn/lecture/15046496#notes`
+)
+    .then((value) => value.json)
+    .then((responseValue) => {
+        responseValue.forEach((value) => {
+            console.log(`The value is ${value}`);
+            return fetch(
+                `https://www.udemy.com/course/complete-react-developer-zero-to-mastery/learn/lecture/15046496#notes ${value}`
+            );
+        });
+    })
+    .then((response) => response.json)
+    .then((responseData) => console.log(responseData));
