@@ -628,17 +628,34 @@
 //     console.log("This is a rejected case");
 // }
 
-fetch(
-    `https://www.udemy.com/course/complete-react-developer-zero-to-mastery/learn/lecture/15046496#notes`
-)
-    .then((value) => value.json)
-    .then((responseValue) => {
-        responseValue.forEach((value) => {
-            console.log(`The value is ${value}`);
-            return fetch(
-                `https://www.udemy.com/course/complete-react-developer-zero-to-mastery/learn/lecture/15046496#notes ${value}`
-            );
-        });
-    })
-    .then((response) => response.json)
-    .then((responseData) => console.log(responseData));
+// fetch(
+//     `https://www.udemy.com/course/complete-react-developer-zero-to-mastery/learn/lecture/15046496#notes`
+// )
+//     .then((value) => value.json)
+//     .then((responseValue) => {
+//         responseValue.forEach((value) => {
+//             console.log(`The value is ${value}`);
+//             return fetch(
+//                 `https://www.udemy.com/course/complete-react-developer-zero-to-mastery/learn/lecture/15046496#notes ${value}`
+//             );
+//         });
+//     })
+//     .then((response) => response.json)
+//     .then((responseData) => console.log(responseData));
+
+const myWeatherApiFunction = async function () {
+    try {
+        const myWeatherApi = await fetch(
+            `http://api.openweathermap.org/data/2.5/weather?q=Kochi,Kerala&appid=fd86b47036a70a9229aca1f80b1779c0`
+        );
+        const myWeatherApiFetched = myWeatherApi.json;
+        console.log(myWeatherApiFetched);
+        const myWeatherResponseApi = await fetch(
+            `http://api.openweathermap.org/data/2.5/weather?q=Kochi,Kerala&appid=fd86b47036a70a9229aca1f80b1779c0 ${myWeatherApiFetched.id}`
+        );
+        const myWEather = await myWeatherResponseApi.json;
+        console.log(myWEather);
+    } catch (error) {
+        console.log(`This is the error - ${error}`);
+    }
+};
