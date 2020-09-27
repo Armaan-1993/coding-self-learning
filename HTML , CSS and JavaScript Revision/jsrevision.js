@@ -607,13 +607,23 @@
 // nextPromise
 //     .then((value) => console.log("This is a resolve"))
 //     .catch((myvalue) => console.log("This is a reject"));
-function newPromisefunction() {
-    return new Promise((resolve, reject) => {
-        setTimeout(function () {
-            resolve("This is resolved");
-        }, 2000);
+
+const mynewpromise = new Promise((resolve, reject) => {
+    setTimeout(function () {
+        if (true) {
+            resolve("This is a resolved case!");
+        } else {
+            reject("This is a rejected case!");
+        }
     });
-}
-newPromisefunction
-    .then((value) => console.log(value))
-    .catch((myvalue) => console.log(myvalue));
+});
+mynewpromise
+    .then((myresolvevalue) => console.log(myresolvevalue))
+    .catch((myrejectvalue) => console.log(myrejectvalue));
+
+// function myRejectFunction() {
+//     console.log("This is a resolved case!");
+// }
+// function myRejectFunction() {
+//     console.log("This is a rejected case");
+// }
