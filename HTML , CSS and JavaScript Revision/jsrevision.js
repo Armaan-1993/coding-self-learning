@@ -643,19 +643,50 @@
 //     .then((response) => response.json)
 //     .then((responseData) => console.log(responseData));
 
-const myWeatherApiFunction = async function () {
-    try {
-        const myWeatherApi = await fetch(
-            `http://api.openweathermap.org/data/2.5/weather?q=Kochi,Kerala&appid=fd86b47036a70a9229aca1f80b1779c0`
-        );
-        const myWeatherApiFetched = myWeatherApi.json;
-        console.log(myWeatherApiFetched);
-        const myWeatherResponseApi = await fetch(
-            `http://api.openweathermap.org/data/2.5/weather?q=Kochi,Kerala&appid=fd86b47036a70a9229aca1f80b1779c0 ${myWeatherApiFetched.id}`
-        );
-        const myWEather = await myWeatherResponseApi.json;
-        console.log(myWEather);
-    } catch (error) {
-        console.log(`This is the error - ${error}`);
-    }
-};
+// const myWeatherApiFunction = async function () {
+//     try {
+//         const myWeatherApi = await fetch(
+//             `http://api.openweathermap.org/data/2.5/weather?q=Kochi,Kerala&appid=fd86b47036a70a9229aca1f80b1779c0`
+//         );
+//         const myWeatherApiFetched = myWeatherApi.json;
+//         console.log(myWeatherApiFetched);
+//         const myWeatherResponseApi = await fetch(
+//             `http://api.openweathermap.org/data/2.5/weather?q=Kochi,Kerala&appid=fd86b47036a70a9229aca1f80b1779c0 ${myWeatherApiFetched.id}`
+//         );
+//         const myWEather = await myWeatherResponseApi.json;
+//         console.log(myWEather);
+//     } catch (error) {
+//         console.log(`This is the error - ${error}`);
+//     }
+// };
+
+// class Doggo {
+//     Dog(name, age, color) {
+//         this.name = name;
+//         this.age = age;
+//         this.color = color;
+//     }
+//     myfunction() {
+//         console.log(`My dog's name is ${this.name}`);
+//     }
+// }
+
+// // let dog = new Dog("Peggy", 12, "bi-color");
+// // console.log(dog);
+// myfunction();
+
+// try {
+//     console.log("My name is Armaan");
+// } catch {
+//     console.log("My bro's name is Rehaan");
+// }
+
+// let array = [1, 2, 3, 4, 5];
+// let i = 0;
+// while (i < array.length) {
+//     console.log(array[i]);
+//     i++;
+// }
+
+let name = "Armaan";
+console.log(Object.create(name));
