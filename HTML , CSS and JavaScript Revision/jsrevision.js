@@ -688,5 +688,44 @@
 //     i++;
 // }
 
-let name = "Armaan";
-console.log(Object.create(name));
+// let name = "Armaan";
+// console.log(Object.create(name));
+
+// let array = [1, 2, 3, 8, 4, 5];
+// // for (let i = 0; i < array.length; i++) {
+// //     let num = array[i];
+// //     let myarray = [];
+// //     if (num > array[i + 1]) {
+// //         num = array[i + 1];
+// //         myarray += num;
+// //     }
+// //     console.log(myarray);
+// // }
+// console.log(array.lastIndexOf());
+
+// let name = "myname";
+// let newname = name.split("").sort();
+// console.log(newname);
+
+// let num = 453005;
+// let newnum = num.toString().replace(/0/g, "1");
+// nextnum = parseInt(newnum);
+// console.log(newnum);
+// console.log(typeof nextnum);
+
+// function factors(num) {
+//     for (let i = 1; i <= num; i++) {
+//         if (num % i === 0) {
+//             console.log(i);
+//         }
+//     }
+// }
+// factors(45);
+
+let data = "sdfsadas";
+let newdata = data.split("").reverse().join("");
+if (newdata === data) {
+    console.log("Its is a palindrome");
+} else {
+    console.log("not palindrome");
+}
