@@ -6,3 +6,20 @@
 img {
     width: 100%;
 }
+#sex-bomb {
+    display: none;
+}
+button {
+    width: 7vw;
+    height: 5vh;
+    background-color: white;
+    color: black;
+}
+button:hover {
+    background-color: black;
+    color: white;
+}
+#button-div {
+    display: flex;
+    justify-content: center;
+}
