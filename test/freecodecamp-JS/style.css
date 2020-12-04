@@ -7,7 +7,7 @@ img {
     width: 100%;
 }
 #sex-bomb {
-    display: none;
+    display: block;
 }
 button {
     width: 7vw;

@@ -1,9 +1,11 @@
-document.getElementById("my-button").addEventListener("click", myFunction());
+document.getElementById("my-button").addEventListener("click", myFunction);
 let x = document.getElementById("sex-bomb");
 
-function myFunction(e) {
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    }
-    e.preventDefault;
+function myFunction() {
+    console.log(x.style.display);
+    // if (x.style.display === "block") {
+    //     x.style.display = "";
+    // }
+
+    // e.preventDefault();
 }
