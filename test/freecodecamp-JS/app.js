@@ -176,25 +176,85 @@
 
 // Asyncall();
 
-function promiseInFourSecs() {
-    return new Promise((resolve, reject) => {
-        if (resolve) {
-            setTimeout(() => {
-                resolve("The promise is fulfilled!");
-            }, 4000);
-        }
-    });
-}
-// promiseInFourSecs().then((value) => {
-//     console.log(value);
-// });
-// async function displayPromise() {
-//     let myPromise = await promiseInFourSecs();
-//     console.log(myPromise);
+// function promiseInFourSecs() {
+//     return new Promise((resolve, reject) => {
+//         if (resolve) {
+//             setTimeout(() => {
+//                 resolve("The promise is fulfilled!");
+//             }, 4000);
+//         }
+//     });
 // }
-// displayPromise();
+// // promiseInFourSecs().then((value) => {
+// //     console.log(value);
+// // });
+// // async function displayPromise() {
+// //     let myPromise = await promiseInFourSecs();
+// //     console.log(myPromise);
+// // }
+// // displayPromise();
 
-async function myPromise() {
-    console.log(await promiseInFourSecs());
-}
-myPromise();
+// async function myPromise() {
+//     console.log(await promiseInFourSecs());
+// }
+// myPromise();
+
+// let num = 5 / "5";
+// console.log(num);
+
+// const  myFunc = () => {
+//     console.log(this);
+// }
+// myFunc();
+
+// let obj = {
+//     name: "Nikhil",
+//     age: 14,
+//     newFunction: function () {
+//         return `my name is ${this.name} and i am ${this.age} years old`;
+//     },
+// };
+// console.log(obj.newFunction());
+// var myNoun = "dog";
+// var myAdjective = "big";
+// var myVerb = "ran";
+// var myAdverb = "quickly";
+
+// // Only change code below this line
+// var wordBlanks =
+//     "The " + myAdjective + " " + myNoun + " " + myVerb + " " + myAdverb;
+// console.log(wordBlanks);
+
+// function nextInLine(arr, item) {
+//     // Only change code below this line
+
+//     if (arr.length === 0) {
+//         return item;
+//     } else {
+//         return arr[0];
+//     }
+//     // Only change code above this line
+// }
+// nextInLine([3, 4], 5);
+
+// let obj = ["g,o,x,t,g,h"];
+// let obj1 = ["f,o,o"];
+// // console.log(Array.from(obj));
+
+// console.log(obj.every());
+
+// let arr = [1, 5, 1, 2, 4];
+// let nextArr = arr.splice(2, 3, 4);
+// console.log(nextArr);
+
+let stud = { name: "ARMAAN", age: 27 };
+
+// console.log(Object.values(stud));
+// Object.freeze(stud);
+// stud.sex = "male";
+// console.log(stud);
+// console.log(Object.isExtensible(stud));
+
+let objentry = new Map(["name", "armaan"]);
+let myobj = Object.fromEntries(objentry);
+console.log(myobj);
