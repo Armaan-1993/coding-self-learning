@@ -247,7 +247,7 @@
 // let nextArr = arr.splice(2, 3, 4);
 // console.log(nextArr);
 
-let stud = { name: "ARMAAN", age: 27 };
+// let stud = { name: "ARMAAN", age: 27 };
 
 // console.log(Object.values(stud));
 // Object.freeze(stud);
@@ -255,6 +255,47 @@ let stud = { name: "ARMAAN", age: 27 };
 // console.log(stud);
 // console.log(Object.isExtensible(stud));
 
-let objentry = new Map(["name", "armaan"]);
-let myobj = Object.fromEntries(objentry);
-console.log(myobj);
+// let objentry = new Map(["name", "armaan"]);
+// let myobj = Object.fromEntries(objentry);
+// console.log(myobj);
+
+// function outerFunction() {
+//     let x = 23;
+//     function innerFucntion() {
+//         let y = 4;
+//         return x + y;
+//     }
+//     return innerFucntion;
+// }
+
+// let num = outerFunction();
+// console.log(num());
+
+// function myPromiseFunctin() {
+//     return new Promise((resolve, reject) => {
+//         if (resolve) {
+//             setTimeout(() => {
+//                 resolve("It has been resolved!");
+//             }, 3000);
+//         }
+//     });
+// }
+
+// function getPromise() {
+//     myPromiseFunctin().then((value) => console.log(value));
+// }
+// getPromise();
+
+// const outerFunc = () => {
+//     let x = 5;
+//     const innerFunc = (y) => {
+//         return x + y;
+//     };
+//     return innerFunc;
+// };
+
+// let num1 = outerFunc();
+// console.log(num1(3));
+
+let a = [];
+console.log(typeof a);
