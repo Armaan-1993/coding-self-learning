@@ -297,5 +297,5 @@
 // let num1 = outerFunc();
 // console.log(num1(3));
 
-let a = [];
-console.log(typeof a);
+// let a = [];
+// console.log(typeof a);
